@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Museo: La llegada del juicio Z™</title>
+    
+    <meta property="og:title" content="Museo Digital: La Llegada del Juicio Z" />
+    <meta property="og:description" content="Preservación histórica del servidor de DayZ Xbox (2023-2025). Una comunidad que marcó una era." />
+    <meta property="og:image" content="Imagenes/Cabezera1.jpg" />
+    <meta property="og:type" content="website" />
+
+    <style>
+        :root {
+            --red-main: #ff3c3c;
+            --gold-museum: #d4af37;
+            --bg-dark: #0a0a0a;
+            --panel-dark: #1a1a1a;
+        }
+
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: var(--bg-dark); color: #f1f1f1; }
+
+        /* BANNER DE MUSEO */
+        .museum-banner {
+            background: linear-gradient(90deg, #1a1a1a, var(--gold-museum), #1a1a1a);
+            color: #000;
+            text-align: center;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #000;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('Imagenes/Cabezera1.jpg') no-repeat center center / cover;
+            width: 100%; height: 40vh; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+        
+        header h1 { font-size: clamp(1.8rem, 5vw, 3rem); background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 8px; border: 1px solid var(--red-main); }
+
+        nav { background: #111; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
+        nav a { color: #ccc; margin: 0 10px; text-decoration: none; font-weight: bold; font-size: 14px; transition: 0.3s; }
+        nav a:hover { color: var(--red-main); }
+
+        section { padding: 3rem 1.5rem; max-width: 1000px; margin: auto; }
+        h2 { color: var(--red-main); border-bottom: 2px solid var(--red-main); display: inline-block; margin-bottom: 20px; }
+
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: center; }
+        img { width: 100%; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+
+        /* RELOJES Y CONTADORES RESPONSIVOS */
+        .stats-floater {
+            position: fixed; top: 60px; right: 20px; background: rgba(0,0,0,0.8); padding: 15px; border-radius: 10px; border: 1px solid #333; font-size: 13px; z-index: 999;
+        }
+        
+        @media (max-width: 768px) {
+            .stats-floater { position: static; margin: 20px; text-align: center; order: -1; }
+            header { height: 30vh; }
+        }
+
+        .btn { background: var(--red-main); padding: 12px 25px; color: #fff; text-decoration: none; border-radius: 6px; font-weight: bold; transition: 0.3s; display: inline-block; }
+        .btn:hover { background: #b32a2a; transform: translateY(-2px); }
+
+        footer { background: #050505; padding: 2rem; text-align: center; border-top: 1px solid #222; color: #666; }
+    </style>
+</head>
+<body>
+
+    <div class="museum-banner">
+        🏛️ Este servidor cerró formalmente sus puertas el 25/08/2025 - Sitio preservado como archivo histórico
+    </div>
+
+    <header>
+        <h1>La Llegada Del Juicio Z™</h1>
+        <p>Un legado de supervivencia en DayZ Xbox</p>
+    </header>
+
+    <nav>
+        <a href="#bienvenida">Inicio</a>
+        <a href="#reglas">Reglas</a>
+        <a href="#staff">Staff</a>
+        <a href="videos.html">Archivo Video</a>
+    </nav>
+
+    <div class="stats-floater">
+        <div>🇲🇽 MX: <span id="hora-mx">--:--</span> | 🇪🇸 ES: <span id="hora-es">--:--</span></div>
+        <div style="margin-top:10px; color: var(--gold-museum);">⌛ Tiempo de Vida: <br><span id="tiempo-activo">Calculando...</span></div>
+    </div>
+
+    <section id="bienvenida">
+        <div class="grid-container">
+            <div>
+                <h2>Memoria del Superviviente</h2>
+                <p>
+                    Fundado el 18 de junio de 2023, <strong>La llegada del juicio Z</strong> se convirtió en un refugio para la comunidad hispana. 
+                    Durante más de dos años, fuimos testigos de alianzas épicas, traiciones en la Purgas y un rol que definió nuestra identidad.
+                </p>
+                <p>Este espacio queda abierto permanentemente para recordar los mapas, las reglas y el equipo que hizo esto posible.</p>
+            </div>
+            <div>
+                <img src="Imagenes/Cabezera.gif" alt="Acción DayZ">
+            </div>
+        </div>
+    </section>
+
+    <section id="staff">
+        <div class="grid-container">
+            <div>
+                <img src="Imagenes/IMG-20250221-WA0020.jpg" alt="Staff">
+            </div>
+            <div>
+                <h2>El Equipo de Gestión</h2>
+                <p>Gracias a quienes mantuvieron el orden en el caos:</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>⛩️ Min Ji | 🇲🇽 Eduardo Pérez</li>
+                    <li>Damiannn | El Diablo | Ambar</li>
+                    <li>Double G | Davpa | JiscuS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; La Llegada Del Juicio Z™ | 2023 - 2025 | Archivo preservado por IMrLogan.
+    </footer>
+
+    <script>
+        // Lógica de Relojes
+        function actualizar() {
+            const mx = new Date().toLocaleTimeString('es-MX', { timeZone: 'America/Mexico_City', hour12: false });
+            const es = new Date().toLocaleTimeString('es-ES', { timeZone: 'Europe/Madrid', hour12: false });
+            document.getElementById('hora-mx').textContent = mx;
+            document.getElementById('hora-es').textContent = es;
+
+            // Tiempo Activo (Desde fundación hasta el cierre 25/08/2025)
+            const inicio = new Date('2023-06-18');
+            const cierre = new Date('2025-08-25');
+            const diff = Math.abs(cierre - inicio);
+            const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+            document.getElementById('tiempo-activo').textContent = `${dias} días de servicio ininterrumpido`;
+        }
+        setInterval(actualizar, 1000);
+        actualizar();
+    </script>
+</body>
+</html>
